@@ -37,7 +37,7 @@ The SageMaker Debugger was used for debugging by adding hooks to the train and t
 
 The debugger output shows that there isn't any anomalous behavior but if there was, some steps to improve performance could be to try a different architecture for the CNN model along with using a wider range of hyperparameters.
 
-**Profiler Report**
+#### Profiler Report
 The image below shows the profiling that was performed during training.
 ![](https://github.com/emoreno-hub/Image_Classification_Using_AWS_SageMaker/blob/main/screenshots/training_log.PNG)
 
