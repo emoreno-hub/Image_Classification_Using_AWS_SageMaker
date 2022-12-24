@@ -20,12 +20,13 @@ Hyperparameter tuning for the Resnet50 model was performed by searching across t
 - Batch Size: `CategoricalParameter([64, 128])`
 - Epochs: `IntegerParameter(2, 4)`
 
-**Optimizer**
+#### Optimizer
+The Adam optimizer was used for training. The Adam optimization algorithm is an extension to stochastic gradient descent that has recently seen broader adoption for deep learning applications in computer vision and natural language processing.
 
-The Adam optimizer was used for training. The Adam optimization algorithm is an extension to stochastic gradient descent that has recently seen broader adoption for deep learning applications in computer vision and natural language processing. 
+#### Best Hyperparameters
+Several training jobs were performed and SageMaker selected the best hyperparameters.
 
-**Best Hyperparameters**
-The image below shows the best hyperparameters selected from the training job.
+![](https://github.com/emoreno-hub/Image_Classification_Using_AWS_SageMaker/blob/main/screenshots/Training_Jobs.PNG)
 ![](https://github.com/emoreno-hub/Image_Classification_Using_AWS_SageMaker/blob/main/screenshots/training_hpo.PNG)
 
 
