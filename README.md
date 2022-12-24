@@ -21,7 +21,13 @@ Hyperparameter tuning for the Resnet50 model was performed by searching across t
 - Epochs: `IntegerParameter(2, 4)`
 
 **Optimizer**
-The Adam optimizer was used for training. The Adam optimization algorithm is an extension to stochastic gradient descent that has recently seen broader adoption for deep learning applications in computer vision and natural language processing.  
+
+The Adam optimizer was used for training. The Adam optimization algorithm is an extension to stochastic gradient descent that has recently seen broader adoption for deep learning applications in computer vision and natural language processing. 
+
+**Best Hyperparameters**
+The image below shows the best hyperparameters selected from the training job.
+![](https://github.com/emoreno-hub/Image_Classification_Using_AWS_SageMaker/blob/main/screenshots/training_hpo.PNG)
+
 
 ## Debugging and Profiling
 The SageMaker Debugger was used for debugging by adding hooks to the train and test models and then registering the models along with registering the loss function.  SageMaker Profiler was used to check how well the model training was performing and to analyze the instance resource and GPU/CPU utilization.
@@ -31,13 +37,17 @@ The SageMaker Debugger was used for debugging by adding hooks to the train and t
 
 The debugger output shows that there isn't any anomalous behavior but if there was, some steps to improve performance could be to try a different architecture for the CNN model along with using a wider range of hyperparameters.
 
+**Profiler Report**
 
 The profiler can be viewed here: [Profiler Report] (https://github.com/emoreno-hub/Image_Classification_Using_AWS_SageMaker/blob/main/ProfilerReport/profiler-output/profiler-report.html)
 
 ## Model Deployment
 **TODO**: Give an overview of the deployed model and instructions on how to query the endpoint with a sample input.
 
-**TODO** Remember to provide a screenshot of the deployed active endpoint in Sagemaker.
+The `inference.py` script was used to setup and deploy the model endpoint and the image below shows the deployed endpoint.
 
-## Standout Suggestions
-**TODO (Optional):** This is where you can provide information about any standout suggestions that you have attempted.
+![](https://github.com/emoreno-hub/Image_Classification_Using_AWS_SageMaker/blob/main/screenshots/Endpoint.PNG)
+
+After deploying the endpoint, performance was tested using images for Maltese and Poodle breeds. Below is a sample image that was used to test the deployed model by accessing the endpoint.
+
+![](https://github.com/emoreno-hub/Image_Classification_Using_AWS_SageMaker/blob/main/screenshots/Maltese.PNG)
