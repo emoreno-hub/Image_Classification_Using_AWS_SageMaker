@@ -7,4 +7,11 @@ ENV/
 env.bak/
 venv.bak/
 
+# Data
 dogImages.zip
+
+# Images Path
+dogImages/
+
+# Jupyter Notebook
+.ipynb_checkpoints
