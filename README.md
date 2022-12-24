@@ -27,7 +27,7 @@ The Adam optimizer was used for training. The Adam optimization algorithm is an 
 The SageMaker Debugger was used for debugging by adding hooks to the train and test models and then registering the models along with registering the loss function.  SageMaker Profiler was used to check how well the model training was performing and to analyze the instance resource and GPU/CPU utilization.
 
 ### Results
-(https://github.com/emoreno-hub/Image_Classification_Using_AWS_SageMaker/blob/main/screenshots/Debugging_and_Profiling.PNG)
+![](https://github.com/emoreno-hub/Image_Classification_Using_AWS_SageMaker/blob/main/screenshots/Debugging_and_Profiling.PNG)
 
 The debugger output shows that there isn't any anomalous behavior but if there was, some steps to improve performance could be to try a different architecture for the CNN model along with using a wider range of hyperparameters.
 
