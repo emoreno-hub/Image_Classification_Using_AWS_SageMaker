@@ -38,13 +38,13 @@ The SageMaker Debugger was used for debugging by adding hooks to the train and t
 The debugger output shows that there isn't any anomalous behavior but if there was, some steps to improve performance could be to try a different architecture for the CNN model along with using a wider range of hyperparameters.
 
 **Profiler Report**
+The image below shows the profiling that was performed during training.
+![](https://github.com/emoreno-hub/Image_Classification_Using_AWS_SageMaker/blob/main/screenshots/training_log.PNG)
 
 The profiler can be viewed here: [Profiler Report] (https://github.com/emoreno-hub/Image_Classification_Using_AWS_SageMaker/blob/main/ProfilerReport/profiler-output/profiler-report.html)
 
 ## Model Deployment
-**TODO**: Give an overview of the deployed model and instructions on how to query the endpoint with a sample input.
-
-The `inference.py` script was used to setup and deploy the model endpoint and the image below shows the deployed endpoint.
+The model was deployed using a **ml.t2.medium** instance using the `inference.py` script to setup and deploy the endpoint.
 
 ![](https://github.com/emoreno-hub/Image_Classification_Using_AWS_SageMaker/blob/main/screenshots/Endpoint.PNG)
 
